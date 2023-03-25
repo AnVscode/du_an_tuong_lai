@@ -22,7 +22,7 @@ export default function App(props: AppProps) {
   );
 }
 
-App.getInitialProps = async (appContext: any) => {
+App.getStaticProps = async (appContext: any) => {
   const appProps = await NextApp.getInitialProps(appContext);
   return { ...appProps };
 };
