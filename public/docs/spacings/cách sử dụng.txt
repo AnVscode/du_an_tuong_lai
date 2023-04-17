@@ -1,0 +1,12 @@
+import { spacings } from '@untils/index';
+
+// note: với none được thay thế bằng các tham số sau và nhớ phải có "px" đằng sau: 
+    none: 0,
+    extraSmall: 2,
+    small: 5,
+    medium: 10,
+    large: 15,
+    extraLarge: 20,
+    extraExtraLarge: 25,
+
+  padding: ${spacings.none}px;

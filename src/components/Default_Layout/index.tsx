@@ -6,6 +6,6 @@ interface DefaultLayoutProps {
   children: React.ReactNode;
 }
 
-export default function DefaultLayout({ children }: DefaultLayoutProps) {
+export default function index({ children }: DefaultLayoutProps) {
   return <StyledContainer>{children}</StyledContainer>;
 }
