@@ -1,0 +1,23 @@
+import { responsive, screenSize } from '@untils/index';
+
+// note: với min và max được thay thế bằng các tham số sau: 
+    mobile: 360,
+    tablet: 577,
+    smallDesktop: 1024,
+    mediumDesktop: 1200,
+    largeDesktop: 1440,
+
+trong trường hợp nhỏ nhất là bao nhiêu và lớn nhất là bao nhiêu
+    ${responsive(screenSize.min, screenSize.max)} {
+        // your code css here
+    }
+
+trong trường hợp nhỏ nhất là bao nhiêu đến vô hạn
+    ${responsive(screenSize.min, null)} {
+        // your code css here
+    }
+
+trong trường hợp từ không có gì đến lớn nhất là bao nhiêu
+    ${responsive(null, screenSize.max)} {
+        // your code css here
+    }
